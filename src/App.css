@@ -1,38 +1,100 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D,blur');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
   text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.5em;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.AppInput {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #6c5ce7; /* pastel purple */
   color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.App-button:hover {
+  background-color: #5a4bd1; /* darker pastel purple */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.weather-result {
+  margin-top: 20px;
+}
+
+.weather-result p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.city-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #6c5ce7;
+}
+
+.temperature {
+  font-size: 2em;
+  font-weight: bold;
+  color: #ff7675; /* pastel red */
+}
+
+.condition {
+  font-size: 1.2em;
+  color: #74b9ff; /* pastel blue */
+}
+
+.description {
+  font-size: 1em;
+  color: #636e72; /* grey */
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .AppInput, .App-button {
+    width: 100%;
   }
 }
