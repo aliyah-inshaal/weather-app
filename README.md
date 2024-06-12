@@ -44,5 +44,5 @@ These instructions will help you set up the project on your local machine for de
 
 ### Built With
 
-# React - A JavaScript library for building user interfaces.
-# OpenWeatherMap API - A weather data API.
+React - A JavaScript library for building user interfaces.
+OpenWeatherMap API - A weather data API.
